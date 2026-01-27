@@ -727,13 +727,7 @@ body {
     margin-bottom: 25px;
 }
 
-.education-icon {
-    font-size: 3.5rem;
-    background: linear-gradient(135deg, #e0f2fe, #dbeafe);
-    padding: 20px;
-    border-radius: 16px;
-    filter: grayscale(0.3);
-}
+
 
 .education-header h3 {
     font-size: 1.8rem;
