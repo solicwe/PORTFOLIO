@@ -353,12 +353,7 @@ body {
     border-color: var(--primary);
 }
 
-.project-icon {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    filter: grayscale(0.3);
-    transition: var(--transition);
-}
+
 
 .project-card:hover .project-icon {
     filter: grayscale(0);
