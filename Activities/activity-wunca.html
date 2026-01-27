@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WUNCA 45th | Sorawit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WUNCA 45th Conference - SWU Booth Assistant">
+    <title>WUNCA 45th | Sorawit Padungkul</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <canvas id="gridCanvas"></canvas>
+    <canvas id="gridCanvas" aria-hidden="true"></canvas>
+    
     <nav class="navbar">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">SP</a>
@@ -20,24 +23,60 @@
 
     <section class="section">
         <div class="section-container">
-            <a href="../index.html#activities" class="btn btn-secondary" style="margin-bottom: 20px;">← Back to Activities</a>
+            <a href="../index.html#activities" class="btn btn-secondary" style="margin-bottom: 30px;">← Back to Activities</a>
+            
             <h1 class="section-title">WUNCA 45th 2025</h1>
             
-            <div class="project-card" style="text-align:left; margin-bottom:40px;">
-                <p><strong>Date:</strong> Jul-Sep, 2025</p>
-                <p><strong>Role:</strong> Booth Assistant</p>
-                <hr style="margin:20px 0; border:0; border-top:1px solid #eee;">
-                <p>Introduced educational innovations and guided visitors during the 45th WUNCA conference at SWU.</p>
-            </div>
+            <article class="project-card" style="text-align: left; margin-bottom: 50px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 25px; padding: 25px; background: var(--gray-100); border-radius: 12px;">
+                    <div>
+                        <p style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 600; margin-bottom: 5px;">Event Date</p>
+                        <p style="font-family: var(--font-code); font-weight: 600;">Jul-Sep 2025</p>
+                    </div>
+                    <div>
+                        <p style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 600; margin-bottom: 5px;">Role</p>
+                        <p style="font-weight: 600;">Booth Assistant</p>
+                    </div>
+                    <div>
+                        <p style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 600; margin-bottom: 5px;">Location</p>
+                        <p style="font-weight: 600;">Srinakharinwirot University</p>
+                    </div>
+                </div>
 
-            <div class="projects-grid">
-                <img src="../pictures/Wunca_1.jpg" class="project-card" style="padding:0; height:300px; object-fit:cover;">
-                <img src="../pictures/Wunca_2.jpg" class="project-card" style="padding:0; height:300px; object-fit:cover;">
+                <hr style="margin: 25px 0; border: 0; border-top: 2px solid var(--gray-200);">
+                
+                <h3 style="color: var(--primary); margin-bottom: 15px;">Event Overview</h3>
+                <p style="color: var(--secondary); line-height: 1.8; margin-bottom: 20px;">
+                    The 45th Workshop on UniNet Network and Computer Application (WUNCA) was hosted at SWU. I served as a Booth Assistant, representing the university's technological initiatives during this major academic conference.
+                </p>
+
+                <h3 style="color: var(--primary); margin-bottom: 15px;">Key Responsibilities</h3>
+                <ul style="margin-left: 20px; color: var(--secondary); margin-bottom: 20px; line-height: 1.8;">
+                    <li>Introduced educational innovations to conference attendees</li>
+                    <li>Guided visitors through the exhibition area</li>
+                    <li>Assisted in setting up and maintaining the booth display</li>
+                    <li>Facilitated interaction between university representatives and visitors</li>
+                </ul>
+            </article>
+
+            <div class="gallery">
+                <h3>📸 Event Gallery</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../pictures/Wunca_1.jpg" alt="WUNCA Conference Booth" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../pictures/Wunca_2.jpg" alt="WUNCA Conference Activity" loading="lazy">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer"><p>&copy; 2025 Sorawit Padungkul</p></footer>
+    <footer class="footer">
+        <p>&copy; 2026 Sorawit Padungkul. All rights reserved.</p>
+    </footer>
+    
     <script src="../js/script.js"></script>
 </body>
 </html>

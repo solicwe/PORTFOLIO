@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nursing Workshop | Sorawit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nursing College Workshop - Assistant Instructor">
+    <title>Nursing Workshop | Sorawit Padungkul</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <canvas id="gridCanvas"></canvas>
+    <canvas id="gridCanvas" aria-hidden="true"></canvas>
+    
     <nav class="navbar">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">SP</a>
@@ -20,24 +23,60 @@
 
     <section class="section">
         <div class="section-container">
-            <a href="../index.html#projects" class="btn btn-secondary" style="margin-bottom: 20px;">← Back to Projects</a>
+            <a href="../index.html#projects" class="btn btn-secondary" style="margin-bottom: 30px;">← Back to Projects</a>
+            
             <h1 class="section-title">Nursing College Workshop</h1>
             
-            <div class="project-card" style="text-align:left; margin-bottom:40px;">
-                <p><strong>Date:</strong> Aug 16-17, 2025</p>
-                <p><strong>Role:</strong> Assistant Instructor & Metaverse Developer</p>
-                <hr style="margin:20px 0; border:0; border-top:1px solid #eee;">
-                <p>Guided participants in creating 3D classroom models using Blender and supported on-site setup.</p>
-            </div>
+            <article class="project-card" style="text-align: left; margin-bottom: 50px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 25px; padding: 25px; background: var(--gray-100); border-radius: 12px;">
+                    <div>
+                        <p style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 600; margin-bottom: 5px;">Date</p>
+                        <p style="font-family: var(--font-code); font-weight: 600;">Aug 16-17, 2025</p>
+                    </div>
+                    <div>
+                        <p style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 600; margin-bottom: 5px;">Role</p>
+                        <p style="font-weight: 600;">Assistant Instructor</p>
+                    </div>
+                    <div>
+                        <p style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 600; margin-bottom: 5px;">Context</p>
+                        <p style="font-weight: 600;">Nursing College SWU</p>
+                    </div>
+                </div>
 
-            <div class="projects-grid">
-                <img src="../pictures/MetaverseNurs_1.jpg" class="project-card" style="padding:0; height:300px; object-fit:cover;">
-                <img src="../pictures/MetaverseNurs_2.jpg" class="project-card" style="padding:0; height:300px; object-fit:cover;">
+                <hr style="margin: 25px 0; border: 0; border-top: 2px solid var(--gray-200);">
+                
+                <h3 style="color: var(--primary); margin-bottom: 15px;">Workshop Overview</h3>
+                <p style="color: var(--secondary); line-height: 1.8; margin-bottom: 20px;">
+                    This workshop aimed to introduce Nursing College students and staff to Metaverse technologies. I served as an Assistant Instructor, helping bridge the gap between technical 3D modeling tools and educational applications in nursing.
+                </p>
+
+                <h3 style="color: var(--primary); margin-bottom: 15px;">Key Responsibilities</h3>
+                <ul style="margin-left: 20px; color: var(--secondary); margin-bottom: 20px; line-height: 1.8;">
+                    <li>Guided participants in creating 3D classroom models using Blender</li>
+                    <li>Provided hands-on technical support during the workshop sessions</li>
+                    <li>Assisted with on-site hardware and software setup</li>
+                    <li>Facilitated the integration of 3D assets into the virtual learning environment</li>
+                </ul>
+            </article>
+
+            <div class="gallery">
+                <h3>📸 Workshop Gallery</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="../pictures/MetaverseNurs_1.jpg" alt="Nursing Workshop Instruction" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../pictures/MetaverseNurs_2.jpg" alt="Nursing Workshop Class" loading="lazy">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer"><p>&copy; 2025 Sorawit Padungkul</p></footer>
+    <footer class="footer">
+        <p>&copy; 2026 Sorawit Padungkul. All rights reserved.</p>
+    </footer>
+    
     <script src="../js/script.js"></script>
 </body>
 </html>

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrainFit | Sorawit</title>
+    <meta name="description" content="BrainFit - Assistive Cognitive Care Application for Alzheimer's Patients">
+    <title>BrainFit Application | Sorawit Padungkul</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <canvas id="gridCanvas"></canvas>
+    <canvas id="gridCanvas" aria-hidden="true"></canvas>
     
     <nav class="navbar">
         <div class="nav-container">
@@ -16,36 +17,95 @@
             <ul class="nav-menu">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="../index.html#projects" class="nav-link active">Projects</a></li>
-                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="section">
         <div class="section-container">
-            <a href="../index.html#projects" class="btn btn-secondary" style="margin-bottom: 20px;">← Back to Projects</a>
+            <a href="../index.html#projects" class="btn btn-secondary" style="margin-bottom: 30px;">← Back to Projects</a>
             
-            <h1 class="section-title">BrainFit Application</h1>
-            
-            <div class="project-card" style="text-align:left; margin-bottom:40px;">
-                <div class="project-icon" style="text-align:center; margin-bottom:20px;">🧠</div>
-                <p><strong>Date:</strong> Aug 24 - Oct 8, 2025</p>
-                <p><strong>Role:</strong> ReactJS, UI/UX Design, Front-End Development</p>
-                <p><strong>Tech Stack:</strong> ReactJS, JavaScript, CSS</p>
-                <hr style="margin:20px 0; border:0; border-top:1px solid #eee;">
+            <article class="project-card" style="max-width: 900px; margin: 0 auto;">
+                <div class="project-icon" style="text-align: center; font-size: 4rem; margin-bottom: 20px;">🧠</div>
                 
-                <h3>Project Detail</h3>
-                <ul style="margin-left:20px; color:var(--secondary); margin-top:10px;">
-                    <li>Co-developed a supportive app aiding Alzheimer's patients via interactive activities and games.</li>
-                    <li>Collaborated with a multi-disciplinary team to optimize usability and accessibility.</li>
-                    <li>Designed responsive UI for elderly users.</li>
-                </ul>
-            </div>
+                <h1 class="section-title" style="margin-bottom: 20px;">BrainFit Application</h1>
+                
+                <div style="text-align: left; line-height: 1.8;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; padding: 25px; background: var(--gray-100); border-radius: 12px;">
+                        <div>
+                            <p style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 600; margin-bottom: 5px;">Timeline</p>
+                            <p style="font-family: var(--font-code); font-weight: 600;">Aug 24 - Oct 8, 2025</p>
+                        </div>
+                        <div>
+                            <p style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 600; margin-bottom: 5px;">Role</p>
+                            <p style="font-weight: 600;">ReactJS Developer, UI/UX Designer</p>
+                        </div>
+                        <div>
+                            <p style="color: var(--secondary); font-size: 0.9rem; text-transform: uppercase; font-weight: 600; margin-bottom: 5px;">Tech Stack</p>
+                            <p style="font-weight: 600;">ReactJS, JavaScript, CSS</p>
+                        </div>
+                    </div>
 
-            </div>
+                    <div class="project-tags" style="justify-content: center; margin-bottom: 30px;">
+                        <span class="tag">ReactJS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">Accessibility</span>
+                    </div>
+
+                    <hr style="margin: 30px 0; border: 0; border-top: 2px solid var(--gray-200);">
+                    
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">🎯 Project Overview</h3>
+                    <p style="color: var(--secondary); margin-bottom: 25px;">
+                        BrainFit is an innovative assistive cognitive care application specifically designed to support individuals living with Alzheimer's disease. 
+                        The application provides a suite of interactive activities and engaging games tailored to enhance and maintain cognitive functions in daily life.
+                    </p>
+
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">✨ Key Features</h3>
+                    <ul style="margin-left: 20px; color: var(--secondary); margin-bottom: 25px; line-height: 2;">
+                        <li><strong>Interactive Cognitive Games:</strong> Memory exercises, pattern recognition, and problem-solving activities</li>
+                        <li><strong>User-Friendly Interface:</strong> Designed specifically for elderly users with large buttons and clear navigation</li>
+                        <li><strong>Progress Tracking:</strong> Monitor cognitive performance over time with visual analytics</li>
+                        <li><strong>Adaptive Difficulty:</strong> Activities adjust based on user performance</li>
+                        <li><strong>Accessibility Features:</strong> High contrast modes, text-to-speech, and simplified interactions</li>
+                    </ul>
+
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">👥 My Contributions</h3>
+                    <ul style="margin-left: 20px; color: var(--secondary); margin-bottom: 25px; line-height: 2;">
+                        <li>Developed responsive UI components using ReactJS with focus on accessibility</li>
+                        <li>Designed and implemented user-friendly interfaces optimized for elderly users</li>
+                        <li>Collaborated with healthcare professionals to ensure medical accuracy</li>
+                        <li>Conducted usability testing with target demographic</li>
+                        <li>Optimized application performance for smooth user experience</li>
+                        <li>Integrated feedback mechanisms for continuous improvement</li>
+                    </ul>
+
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">🎓 Learning Outcomes</h3>
+                    <ul style="margin-left: 20px; color: var(--secondary); margin-bottom: 25px; line-height: 2;">
+                        <li>Gained deep understanding of accessibility-first design principles</li>
+                        <li>Developed expertise in creating intuitive interfaces for special needs users</li>
+                        <li>Enhanced skills in ReactJS state management and component architecture</li>
+                        <li>Learned importance of user research and iterative design process</li>
+                        <li>Improved cross-functional collaboration with multidisciplinary teams</li>
+                    </ul>
+
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">💡 Impact</h3>
+                    <p style="color: var(--secondary); margin-bottom: 25px;">
+                        The BrainFit application represents a meaningful intersection of technology and healthcare, providing a digital tool that can 
+                        positively impact the quality of life for Alzheimer's patients and their caregivers. By making cognitive exercises accessible 
+                        and engaging, we're contributing to better cognitive health management in our aging population.
+                    </p>
+                </div>
+            </article>
+        </div>
     </section>
 
-    <footer class="footer"><p>&copy; 2025 Sorawit Padungkul</p></footer>
+    <footer class="footer">
+        <p>&copy; 2026 Sorawit Padungkul. All rights reserved.</p>
+    </footer>
+    
     <script src="../js/script.js"></script>
 </body>
 </html>

@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorawit Padungkul | Portfolio</title>
+    <meta name="description" content="Sorawit Padungkul - Computer Engineering Student Portfolio">
+    <meta name="author" content="Sorawit Padungkul">
+    <meta name="keywords" content="Computer Engineering, Portfolio, Web Development, React, Python">
+    <title>Sorawit Padungkul | Computer Engineering Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <canvas id="gridCanvas"></canvas>
+    <!-- Animated Background Canvas -->
+    <canvas id="gridCanvas" aria-hidden="true"></canvas>
     
-    <nav class="navbar">
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation">
         <div class="nav-container">
-            <div class="nav-logo">SP</div>
+            <a href="#home" class="nav-logo" aria-label="Home">SP</a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -21,7 +32,7 @@
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Toggle menu">
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -29,169 +40,225 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="section hero-section">
         <div class="hero-content">
             <div class="profile-image-container">
-                <img src="pictures/Myself.jpg" alt="Sorawit Padungkul" class="profile-image">
-                <div class="profile-ring"></div>
+                <img src="pictures/Myself.jpg" alt="Sorawit Padungkul - Computer Engineering Student" class="profile-image">
+                <div class="profile-ring" aria-hidden="true"></div>
             </div>
             <h1 class="hero-title">
                 <span class="title-line">Sorawit</span>
                 <span class="title-line">Padungkul</span>
             </h1>
             <p class="hero-subtitle">Computer Engineering Student</p>
-            <p class="hero-location">Srinakharinwirot University</p>
+            <p class="hero-location">📍 Srinakharinwirot University</p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="pictures/Resume.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+                <a href="pictures/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Download CV</a>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="section-container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 
-                <div class="project-card">
-                    <div class="project-icon">🧠</div>
-                    <h3>BrainFit</h3>
-                    <p class="project-role">ReactJS • UI/UX Design [cite: 62]</p>
-                    <p class="project-date">Aug 24 - Oct 8, 2025 [cite: 61]</p>
-                    <p class="project-desc">Assistive Cognitive Care Application for Alzheimer's patients [cite: 63]</p>
-                    <div class="project-tags"><span class="tag">ReactJS</span><span class="tag">Front-End</span></div>
+                <!-- BrainFit Project -->
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true">🧠</div>
+                    <h3>BrainFit Application</h3>
+                    <p class="project-role">ReactJS • UI/UX Design</p>
+                    <p class="project-date">Aug 24 - Oct 8, 2025</p>
+                    <p class="project-desc">Assistive cognitive care application designed to support Alzheimer's patients through interactive activities and games, enhancing daily cognitive functions.</p>
+                    <div class="project-tags">
+                        <span class="tag">ReactJS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Healthcare</span>
+                    </div>
                     <a href="Projects/BrainFit.html" class="project-link">View Details →</a>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-icon">🌳</div>
+                <!-- BST Visualizer Project -->
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true">🌳</div>
                     <h3>Binary Search Tree Visualizer</h3>
-                    <p class="project-role">Educational Simulation [cite: 56]</p>
-                    <p class="project-date">Nov 5 - Nov 17, 2024 [cite: 57]</p>
-                    <p class="project-desc">Web visualization tool to demonstrate BST insertion, deletion, and traversal [cite: 59]</p>
-                    <div class="project-tags"><span class="tag">HTML5</span><span class="tag">JavaScript</span></div>
+                    <p class="project-role">Educational Tool • Web Development</p>
+                    <p class="project-date">Nov 5 - Nov 17, 2024</p>
+                    <p class="project-desc">Interactive web-based visualization tool that demonstrates BST operations including insertion, deletion, and traversal algorithms in real-time.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Algorithm</span>
+                    </div>
                     <a href="Projects/BTS.html" class="project-link">View Details →</a>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-icon">📊</div>
+                <!-- TedE Project -->
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true">📊</div>
                     <h3>TedE Grade Calculator</h3>
-                    <p class="project-role">ReactJS • Web Application [cite: 67]</p>
-                    <p class="project-date">Oct 14, 2022 - Dec 9, 2025 [cite: 66]</p>
-                    <p class="project-desc">Interactive GPA calculator and ranking platform for students [cite: 68]</p>
-                    <div class="project-tags"><span class="tag">ReactJS</span><span class="tag">Web Tool</span></div>
+                    <p class="project-role">ReactJS • Full Stack Development</p>
+                    <p class="project-date">Oct 14, 2022 - Dec 9, 2025</p>
+                    <p class="project-desc">Comprehensive GPA calculator and student ranking platform featuring modular UI components and responsive design for seamless user experience.</p>
+                    <div class="project-tags">
+                        <span class="tag">ReactJS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Web App</span>
+                    </div>
                     <a href="Projects/TedE.html" class="project-link">View Details →</a>
-                </div>
+                </article>
 
             </div>
         </div>
     </section>
 
+    <!-- Activities Section -->
     <section id="activities" class="section">
         <div class="section-container">
             <h2 class="section-title">Activities & Leadership</h2>
             <div class="timeline">
                 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <!-- Inam Cafe -->
+                <article class="timeline-item">
+                    <div class="timeline-dot" aria-hidden="true"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Dec 5-6, 2025 [cite: 88]</span>
-                        <h3>Metaverse Workshop: Inam Cafe</h3>
-                        <p class="timeline-role">Metaverse Developer [cite: 89]</p>
-                        <p>Developed the 3D cafeteria zone using Blender [cite: 90]</p>
+                        <span class="timeline-date">Dec 5-6, 2025</span>
+                        <h3>Metaverse Workshop: Inam Cafe & Bar</h3>
+                        <p class="timeline-role">Metaverse Developer</p>
+                        <p>Developed a comprehensive 3D cafeteria environment using Blender, integrating realistic textures and interactive elements for virtual exploration.</p>
                         <a href="Activities/activity-inam.html" class="timeline-link">View Gallery →</a>
-                    </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                        <div class="project-tags">
+                        <span class="tag">3D Modeling</span>
+                        <span class="tag">Communication</span>
+                    </div>
+
+                    </div>
+                </article>
+
+                <!-- Nursing Workshop -->
+                <article class="timeline-item">
+                    <div class="timeline-dot" aria-hidden="true"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Aug 16-17, 2025 [cite: 83]</span>
-                        <h3>Metaverse Workshop for Nursing</h3>
-                        <p class="timeline-role">Assistant Instructor & Developer [cite: 84]</p>
-                        <p>Guided participants in creating 3D classroom models using Blender [cite: 85]</p>
+                        <span class="timeline-date">Aug 16-17, 2025</span>
+                        <h3>Metaverse Workshop for Nursing College</h3>
+                        <p class="timeline-role">Assistant Instructor & Developer</p>
+                        <p>Guided nursing students in creating 3D classroom models using Blender, providing hands-on technical support and on-site setup assistance.</p>
                         <a href="Activities/activity-Nursing.html" class="timeline-link">View Gallery →</a>
+                        <div class="project-tags">
+                        <span class="tag">3D Modeling</span>
+                        <span class="tag">Communication</span>
                     </div>
-                </div>
+                    </div>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <!-- SCI POWER -->
+                <article class="timeline-item">
+                    <div class="timeline-dot" aria-hidden="true"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Aug 11-14, 2025 [cite: 80]</span>
+                        <span class="timeline-date">Aug 11-14, 2025</span>
                         <h3>SCI POWER FOR FUTURE THAILAND</h3>
-                        <p class="timeline-role">Assisted at SWU Metaverse booth [cite: 79]</p>
-                        <p>Introduced educational innovations and guided visitors [cite: 81]</p>
+                        <p class="timeline-role">Exhibition Assistant</p>
+                        <p>Represented SWU Metaverse booth at the MHESI National Fair, introducing educational innovations and guiding visitors through virtual experiences.</p>
                         <a href="Activities/activity-sci.html" class="timeline-link">View Gallery →</a>
+                        <div class="project-tags">
+                        <span class="tag">Presentation</span>
+                        <span class="tag">Communication</span>
                     </div>
-                </div>
+                    </div>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <!-- WUNCA -->
+                <article class="timeline-item">
+                    <div class="timeline-dot" aria-hidden="true"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Jul - Sep 2025 [cite: 76-78]</span>
-                        <h3>WUNCA 45th at SWU</h3>
-                        <p class="timeline-role">Assisted at SWU Metaverse booth [cite: 75]</p>
-                        <p>Guided visitors at Srinakharinwirot University [cite: 75, 79]</p>
+                        <span class="timeline-date">Jul - Sep 2025</span>
+                        <h3>WUNCA 45th Conference</h3>
+                        <p class="timeline-role">Booth Assistant</p>
+                        <p>Assisted at SWU Metaverse booth during the 45th WUNCA conference, showcasing educational technologies and guiding international visitors.</p>
                         <a href="Activities/activity-wunca.html" class="timeline-link">View Gallery →</a>
+                        <div class="project-tags">
+                        <span class="tag">Presentation</span>
+                        <span class="tag">Communication</span>
                     </div>
-                </div>
+                    </div>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <!-- CPE Family -->
+                <article class="timeline-item">
+                    <div class="timeline-dot" aria-hidden="true"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2025 [cite: 74]</span>
+                        <span class="timeline-date">2025</span>
                         <h3>CPE Family Connection</h3>
-                        <p class="timeline-role">Head of Welfare Team [cite: 74]</p>
-                        <p>Managed catering, logistics, and ensured smooth coordination [cite: 74]</p>
+                        <p class="timeline-role">Head of Welfare Team</p>
+                        <p>Led the welfare team for the Computer Engineering Department event, managing catering logistics and ensuring smooth coordination between all teams.</p>
                         <a href="Activities/activity-cpe.html" class="timeline-link">View Gallery →</a>
+                        <div class="project-tags">
+                        <span class="tag">Management</span>
+                        <span class="tag">Communication</span>
                     </div>
-                </div>
+                    </div>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <!-- Freshman Orientation -->
+                <article class="timeline-item">
+                    <div class="timeline-dot" aria-hidden="true"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2025 [cite: 71]</span>
+                        <span class="timeline-date">2025</span>
                         <h3>Faculty Freshmen Orientation</h3>
-                        <p class="timeline-role">Committee: Venue Team [cite: 72]</p>
-                        <p>Assisted in event setup and stage preparation [cite: 73]</p>
+                        <p class="timeline-role">Venue Team Committee</p>
+                        <p>Coordinated event setup and stage preparation for the Faculty of Engineering freshmen orientation, facilitating inter-department communication.</p>
                         <a href="Activities/activity-freshman.html" class="timeline-link">View Gallery →</a>
+                        
+                        <div class="project-tags">
+                        <span class="tag">Management</span>
+                        <span class="tag">Communication</span>
                     </div>
-                </div>
+                    </div>
+                </article>
 
             </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="section-container">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 
                 <div class="skill-category">
-                    <h3>Programming Languages [cite: 92]</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar"><span class="skill-name">Python</span><div class="skill-progress" style="--progress: 80%"></div></div>
-                        <div class="skill-bar"><span class="skill-name">C</span><div class="skill-progress" style="--progress: 70%"></div></div>
-                        <div class="skill-bar"><span class="skill-name">HTML5 / CSS3</span><div class="skill-progress" style="--progress: 90%"></div></div>
-                        <div class="skill-bar"><span class="skill-name">JavaScript</span><div class="skill-progress" style="--progress: 85%"></div></div>
+                    <h3>💻 Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">HTML5 / CSS3</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Frameworks & Tools [cite: 93]</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar"><span class="skill-name">ReactJS</span><div class="skill-progress" style="--progress: 85%"></div></div>
-                        <div class="skill-bar"><span class="skill-name">Unity</span><div class="skill-progress" style="--progress: 70%"></div></div>
-                        <div class="skill-bar"><span class="skill-name">GitHub / VSCode</span><div class="skill-progress" style="--progress: 85%"></div></div>
+                    <h3>🛠️ Frameworks & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ReactJS</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">VS Code</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Design & Media [cite: 94]</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar"><span class="skill-name">Blender (3D)</span><div class="skill-progress" style="--progress: 80%"></div></div>
-                        <div class="skill-bar"><span class="skill-name">Canva / Photoshop</span><div class="skill-progress" style="--progress: 75%"></div></div>
-                        <div class="skill-bar"><span class="skill-name">Premiere Pro</span><div class="skill-progress" style="--progress: 70%"></div></div>
+                    <h3>🎨 Design & Media</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Blender (3D)</span>
+                        <span class="skill-tag">Adobe Photoshop</span>
+                        <span class="skill-tag">Adobe Premiere Pro</span>
+                        <span class="skill-tag">Canva</span>
                     </div>
                 </div>
 
@@ -199,71 +266,81 @@
         </div>
     </section>
 
+    <!-- Education Section -->
     <section id="education" class="section">
         <div class="section-container">
             <h2 class="section-title">Education</h2>
-            <div class="education-card">
+            <article class="education-card">
                 <div class="education-header">
-                    <div class="education-icon">🎓</div>
+                    <div class="education-icon" aria-hidden="true">🎓</div>
                     <div>
                         <h3>Bachelor of Engineering</h3>
-                        <p class="education-major">Computer Engineering [cite: 52]</p>
+                        <p class="education-major">Computer Engineering</p>
                     </div>
                 </div>
                 <div class="education-details">
-                    <p class="education-institution">Srinakharinwirot University [cite: 51]</p>
+                    <p class="education-institution">Srinakharinwirot University</p>
                     <p class="education-location">Bangkok, Thailand</p>
-                    <p class="education-period">Class of 2027 [cite: 52]</p>
+                    <p class="education-period">4-Year Program • Class of 2027</p>
                 </div>
                 <div class="education-highlights">
+                    <h4>Academic Highlights</h4>
                     <ul>
-                        <li>GPA (Latest): 3.23 [cite: 53]</li>
-                        <li>English Proficiency: SWUSET Level B2 [cite: 54]</li>
+                        <li><strong>Cumulative GPA:</strong> 3.03</li>
+                        <li><strong>Latest Semester GPA:</strong> 3.23</li>
+                        <li><strong>English Proficiency:</strong> SWUSET Level B2</li>
                     </ul>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="section-container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Let's Connect</h3>
-                    <p>Open for opportunities.</p>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
                     <div class="contact-methods">
+                        
                         <div class="contact-method">
-                            <span class="contact-icon">📧</span>
+                            <span class="contact-icon" aria-hidden="true">📧</span>
                             <div>
                                 <p class="contact-label">Email</p>
-                                <a href="mailto:prem25.sorawit@gmail.com">prem25.sorawit@gmail.com [cite: 50]</a>
+                                <a href="mailto:prem25.sorawit@gmail.com">prem25.sorawit@gmail.com</a>
                             </div>
                         </div>
+
                         <div class="contact-method">
-                            <span class="contact-icon">📞</span>
+                            <span class="contact-icon" aria-hidden="true">📞</span>
                             <div>
                                 <p class="contact-label">Phone</p>
-                                <a href="tel:0940175289">094-017-5289 [cite: 50]</a>
+                                <a href="tel:+66940175289">094-017-5289</a>
                             </div>
                         </div>
+
                         <div class="contact-method">
-                            <span class="contact-icon">💻</span>
+                            <span class="contact-icon" aria-hidden="true">💻</span>
                             <div>
                                 <p class="contact-label">GitHub</p>
-                                <a href="https://github.com/solicwe" target="_blank">github.com/solicwe [cite: 50]</a>
+                                <a href="https://github.com/solicwe" target="_blank" rel="noopener noreferrer">github.com/solicwe</a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2026 Sorawit Padungkul. All rights reserved.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>
 </html>
